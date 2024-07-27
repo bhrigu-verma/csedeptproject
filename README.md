@@ -41,3 +41,14 @@ Website Data Scraper is a Python-based tool that scrapes a specified website URL
    Please enter the URL: https://en.wikipedia.org/wiki/Main_Page
    Extracting data from https://en.wikipedia.org/wiki/Main_Page...
 
+## Examples
+1.run the project 
+```bash
+   cd website-data-scraper
+   python AdvancedScraper.py
+   Please enter the URL: https://en.wikipedia.org/wiki/Main_Page
+   Extracting data from https://en.wikipedia.org/wiki/Main_Page...
+//now the data would be extracted and also put into csv files
+
+
+
