@@ -31,3 +31,13 @@ Website Data Scraper is a Python-based tool that scrapes a specified website URL
    ```bash
    git clone https://github.com/yourusername/website-data-scraper.git
    cd website-data-scraper
+
+2. now install all the above dependencies
+3. now run the command
+   ```bash
+   python AdvancedScraper.py
+4. now enter the url for which you want to scrap h1,p,a or any of the tags you can modify it too
+   ```bash
+   Please enter the URL: https://en.wikipedia.org/wiki/Main_Page
+   Extracting data from https://en.wikipedia.org/wiki/Main_Page...
+
