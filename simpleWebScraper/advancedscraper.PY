@@ -15,7 +15,7 @@ class AdvancedWebScraper:
         self.results = {
             "Headings": [],
             "Text": [],
-            "Images": [],
+            "Images": [],ds
             "Links": []
         }
         # Initialize logging
