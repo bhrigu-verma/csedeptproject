@@ -1,12 +1,4 @@
 #AdvancedScraper.PY
-
-import re
-import asyncio
-import json
-import csv
-from enum import Enum
-from playwright.async_api import async_playwright
-
 class DataType(Enum):
     POSTS = 0
     LINKS = 1
