@@ -16,7 +16,7 @@ class AdvancedWebScraper:
             "Headings": [],
             "Text": [],
             "Images": [],ds
-            "Links": []
+            "Links": []ok
         }
         # Initialize logging
         logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
