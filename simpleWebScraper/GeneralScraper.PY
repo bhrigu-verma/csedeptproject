@@ -26,14 +26,14 @@ class AdvancedWebScraper:
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, "html.parser")
 
-                # Extract all text content from the page
+                # Extract text content 
                 self.results["heading"] = [paragraph.text.strip() for paragraph in soup.find_all("h")]
                 self.results["Text"] = [paragraph.text.strip() for paragraph in soup.find_all("p")]
 
-                # Extract all image URLs from the page
+                # Extract all image URLs
                 self.results["Images"] = [urljoin(url, img.get("src")) for img in soup.find_all("img") if img.get("src")]
 
-                # Extract all links from the page, handling relative URLs
+                # Extract all links
                 self.results["Links"] = [urljoin(url, link.get("href")) for link in soup.find_all("a") if link.get("href")]
 
             else:
@@ -72,7 +72,7 @@ class AdvancedWebScraper:
 if __name__ == "__main__":
     scraper = AdvancedWebScraper()
 
-    # User input validation
+    #  input of link
     while True:
         url = input("Please enter the URL: ")
         if url:
@@ -85,6 +85,6 @@ if __name__ == "__main__":
 
     scraper.display_results()
 
-    # Save results to CSV
+    # Saving results to CSV
     filename = 'scraped_data.csv'
     scraper.save_to_csv(filename)
