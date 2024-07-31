@@ -26,11 +26,11 @@ class AdvancedWebScraper:
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, "html.parser")
 
-                # Extract text content 
+                # Extract text 
                 self.results["heading"] = [paragraph.text.strip() for paragraph in soup.find_all("h")]
                 self.results["Text"] = [paragraph.text.strip() for paragraph in soup.find_all("p")]
 
-                # Extract all image URLs
+                # Extract image URLs
                 self.results["Images"] = [urljoin(url, img.get("src")) for img in soup.find_all("img") if img.get("src")]
 
                 # Extract all links
