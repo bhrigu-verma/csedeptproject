@@ -33,7 +33,7 @@ class AdvancedWebScraper:
                 # Extract image URLs
                 self.results["Images"] = [urljoin(url, img.get("src")) for img in soup.find_all("img") if img.get("src")]
 
-                # Extract all links
+                # Extract links
                 self.results["Links"] = [urljoin(url, link.get("href")) for link in soup.find_all("a") if link.get("href")]
 
             else:
